@@ -1,5 +1,5 @@
 {
-  "name": "@baseswapfi/sdk",
+  "name": "@baseswapfi/sdk-core",
   "version": "1.0.0",
   "license": "MIT",
   "description": "⚒️ An SDK for building applications on top of Baseswap V3",
