@@ -3,6 +3,7 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
+    "jsx": "react",
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
