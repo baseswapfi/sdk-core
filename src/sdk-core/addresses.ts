@@ -34,13 +34,13 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
 };
 
 const BASE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '',
-  multicallAddress: '', // Uni custom one (or a Mulicall3)
-  quoterAddress: '',
+  v3CoreFactoryAddress: '0x3f6533d37d7623Bf7a396730637CE0F52bf27781',
+  multicallAddress: '0x091e99cb1C49331a94dD62755D168E941AbD0693', // Uni custom one
+  quoterAddress: '0xAFc31e5B4e6EA3C51471B0b3e9767E5046ba8b02', // V2
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '',
-  tickLensAddress: '',
-  swapRouter02Address: '',
+  nonfungiblePositionManagerAddress: '0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065',
+  tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
+  swapRouter02Address: '0xA80f87B1872E9242eA94c36dA88eAbab6B1D2A6c', // 02?
 };
 
 // Base Goerli v3 addresses
