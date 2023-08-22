@@ -1,6 +1,6 @@
 {
   "name": "@baseswapfi/sdk-core",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "description": "⚒️ An SDK for building applications on top of Baseswap V3",
   "author": "0xShoegazer",
@@ -32,14 +32,10 @@
     "@ethersproject/contracts": "^5",
     "@ethersproject/providers": "5",
     "@ethersproject/solidity": "^5.0.9",
-    "@reduxjs/toolkit": "1",
-    "@typechain/ethers-v5": "^7.2.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "ethers": "^5.4.7",
     "jsbi": "^3.1.4",
-    "react": ">=17",
-    "react-redux": ">=7",
     "tiny-invariant": "^1.1.0",
     "toformat": "^2.0.0",
     "typechain": "^5.2.0"
