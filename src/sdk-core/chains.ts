@@ -1,6 +1,7 @@
 export enum ChainId {
   BASE_GOERLI = 84531,
   BASE = 8453,
+  OPTIMISM = 10,
 }
 
 export const SUPPORTED_CHAINS = [ChainId.BASE, ChainId.BASE_GOERLI] as const;
