@@ -1,6 +1,6 @@
 {
   "name": "@baseswapfi/sdk-core",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "description": "⚒️ An SDK for building applications on top of Baseswap V3",
   "author": "0xShoegazer",
@@ -18,7 +18,6 @@
     "node": ">=10"
   },
   "scripts": {
-    "contracts:compile": "typechain --target ethers-v5 --out-dir src/abis/types './node_modules/@uniswap/v3-periphery/artifacts/contracts/**/*Multicall*.json'",
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
