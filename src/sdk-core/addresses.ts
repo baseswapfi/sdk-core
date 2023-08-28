@@ -34,7 +34,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
 };
 
 const BASE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x3aA90F4b3581a38e98D30246Ee3c12865EdE08A5',
+  v3CoreFactoryAddress: '0xaEd85e1D0c7E6e18335B9ea858cE1ab06934eaB5',
   multicallAddress: '0x091e99cb1C49331a94dD62755D168E941AbD0693', // Uni custom one
   quoterAddress: '0x2Cd4DC5B0aB91c1378B2B5Ff9471cDd711Ef765B', // V2
   v3MigratorAddress: '',
