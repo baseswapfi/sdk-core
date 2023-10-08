@@ -45,13 +45,13 @@ const BASE_ADDRESSES: ChainAddresses = {
 
 // Base Goerli v3 addresses
 const BASE_GOERLI_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '',
-  multicallAddress: '',
-  quoterAddress: '',
+  v3CoreFactoryAddress: '0xcdE0DE3de1ecDF228590d4a87F0aE5f6B283a67C',
+  multicallAddress: '0xC5F0F11926d6355273cB66fCf6fB7A5CbD78f848', // Uni custom one
+  quoterAddress: '0x62b7E5FA1388f20730305722CDF168A34251c85C',
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '',
-  tickLensAddress: '',
-  swapRouter02Address: '',
+  nonfungiblePositionManagerAddress: '0xECaD880e9285210fcF057D6629abB0FE6fFeeFd7',
+  tickLensAddress: '0x4460e525CAbF58d2E8F742482A0D228641abfAF6',
+  swapRouter02Address: '0xdA4b92605A385CFB148450d4E89A6A4De4AE92C0',
 };
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
