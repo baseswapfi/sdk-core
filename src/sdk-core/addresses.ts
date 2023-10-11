@@ -59,7 +59,7 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 
 const SCROLL_SEPOLIA_ADDRESS: ChainAddresses = {
   v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
-  multicallAddress: '', // Uni custom one
+  multicallAddress: '0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A', // Uni custom one
   quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910',
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
