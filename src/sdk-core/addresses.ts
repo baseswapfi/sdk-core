@@ -13,7 +13,7 @@ type ChainAddresses = {
   v1MixedRouteQuoterAddress?: string;
 };
 
-const DEFAULT_NETWORKS = [ChainId.BASE, ChainId.BASE_GOERLI];
+const DEFAULT_NETWORKS = [ChainId.BASE, ChainId.BASE_GOERLI, ChainId.SCROLL_SEPOLIA];
 
 function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
   return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
@@ -24,13 +24,16 @@ function constructSameAddressMap(address: string, additionalNetworks: ChainId[] 
 
 export const PROTOCOL_TOKEN_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xd5046B976188EB40f6DE40fB527F89c05b323385',
+  [ChainId.SCROLL_SEPOLIA]: '',
 };
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+  [ChainId.SCROLL_SEPOLIA]: '',
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
+  [ChainId.SCROLL_SEPOLIA]: '',
 };
 
 const BASE_ADDRESSES: ChainAddresses = {
@@ -54,14 +57,26 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xdA4b92605A385CFB148450d4E89A6A4De4AE92C0',
 };
 
+const SCROLL_SEPOLIA_ADDRESS: ChainAddresses = {
+  v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
+  multicallAddress: '', // Uni custom one
+  quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
+  swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
+  [ChainId.SCROLL_SEPOLIA]: SCROLL_SEPOLIA_ADDRESS,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-base',
   [ChainId.BASE_GOERLI]: '',
+  [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
 };
 
 /* V3 Contract Addresses */
