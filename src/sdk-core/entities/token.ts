@@ -1,3 +1,4 @@
+import { BigNumber } from '@ethersproject/bignumber';
 import invariant from 'tiny-invariant';
 import { checkValidAddress, validateAndParseAddress } from '../utils/validateAndParseAddress';
 import { BaseCurrency } from './baseCurrency';
@@ -16,6 +17,13 @@ export class Token extends BaseCurrency {
   public readonly address: string;
 
   /**
+   * Relevant for fee-on-transfer (FOT) token taxes,
+   * Not every ERC20 token is FOT token, so this field is optional
+   */
+  public readonly buyFeeBps?: BigNumber;
+  public readonly sellFeeBps?: BigNumber;
+
+  /**
    *
    * @param chainId {@link BaseCurrency#chainId}
    * @param address The contract address on the chain on which this token lives
@@ -30,7 +38,9 @@ export class Token extends BaseCurrency {
     decimals: number,
     symbol?: string,
     name?: string,
-    bypassChecksum?: boolean
+    bypassChecksum?: boolean,
+    buyFeeBps?: BigNumber,
+    sellFeeBps?: BigNumber
   ) {
     super(chainId, decimals, symbol, name);
     if (bypassChecksum) {
@@ -38,6 +48,15 @@ export class Token extends BaseCurrency {
     } else {
       this.address = validateAndParseAddress(address);
     }
+
+    if (buyFeeBps) {
+      invariant(buyFeeBps.gte(BigNumber.from(0)), 'NON-NEGATIVE FOT FEES');
+    }
+    if (sellFeeBps) {
+      invariant(sellFeeBps.gte(BigNumber.from(0)), 'NON-NEGATIVE FOT FEES');
+    }
+    this.buyFeeBps = buyFeeBps;
+    this.sellFeeBps = sellFeeBps;
   }
 
   /**
