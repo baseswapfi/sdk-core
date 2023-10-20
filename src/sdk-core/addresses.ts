@@ -25,15 +25,18 @@ function constructSameAddressMap(address: string, additionalNetworks: ChainId[] 
 export const PROTOCOL_TOKEN_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xd5046B976188EB40f6DE40fB527F89c05b323385',
   [ChainId.SCROLL_SEPOLIA]: '',
+  [ChainId.SCROLL]: '',
 };
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
   [ChainId.SCROLL_SEPOLIA]: '',
+  [ChainId.SCROLL]: '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285',
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
   [ChainId.SCROLL_SEPOLIA]: '',
+  [ChainId.SCROLL]: '0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df',
 };
 
 const BASE_ADDRESSES: ChainAddresses = {
