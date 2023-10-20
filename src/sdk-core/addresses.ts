@@ -94,6 +94,13 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
 };
 
+export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
+  [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/harleen-m/baseswap',
+  [ChainId.BASE_GOERLI]: '',
+  [ChainId.SCROLL_SEPOLIA]: '',
+  [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
+};
+
 /* V3 Contract Addresses */
 export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
