@@ -67,16 +67,28 @@ const SCROLL_SEPOLIA_ADDRESS: ChainAddresses = {
   swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
 };
 
+const SCROLL_ADDRESS: ChainAddresses = {
+  v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
+  multicallAddress: '0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A', // Uni custom one
+  quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
+  swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.SCROLL_SEPOLIA]: SCROLL_SEPOLIA_ADDRESS,
+  [ChainId.SCROLL]: SCROLL_ADDRESS,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-base',
   [ChainId.BASE_GOERLI]: '',
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
+  [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
 };
 
 /* V3 Contract Addresses */
