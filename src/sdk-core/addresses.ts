@@ -46,8 +46,9 @@ const BASE_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
   nonfungiblePositionManagerAddress: '0xDe151D5c92BfAA288Db4B67c21CD55d5826bCc93',
   tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
-  swapRouter02Address: '0x1B8eea9315bE495187D873DA7773a874545D9D48', // 02?
+  swapRouter02Address: '', // This is the SwapRouter02 that was replaced by the universal router setup
 };
+// v3 router: 0x1B8eea9315bE495187D873DA7773a874545D9D48
 
 // Base Goerli v3 addresses
 const BASE_GOERLI_ADDRESSES: ChainAddresses = {
@@ -57,8 +58,9 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '0xECaD880e9285210fcF057D6629abB0FE6fFeeFd7',
   tickLensAddress: '0x4460e525CAbF58d2E8F742482A0D228641abfAF6',
-  swapRouter02Address: '0xdA4b92605A385CFB148450d4E89A6A4De4AE92C0',
+  swapRouter02Address: '',
 };
+// v3 router: 0xdA4b92605A385CFB148450d4E89A6A4De4AE92C0
 
 const SCROLL_SEPOLIA_ADDRESS: ChainAddresses = {
   v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
@@ -67,8 +69,9 @@ const SCROLL_SEPOLIA_ADDRESS: ChainAddresses = {
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
   tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
-  swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+  swapRouter02Address: '',
 };
+// v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
 
 const SCROLL_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
@@ -77,8 +80,9 @@ const SCROLL_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
   tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
-  swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+  swapRouter02Address: '',
 };
+// v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
