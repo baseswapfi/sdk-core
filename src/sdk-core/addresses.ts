@@ -74,11 +74,11 @@ const SCROLL_SEPOLIA_ADDRESS: ChainAddresses = {
 // v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
 
 const SCROLL_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
+  v3CoreFactoryAddress: '0xbF79915e80DE0A361A4F35175BA9bF2e91B10424',
   multicallAddress: '0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A', // Uni custom one
-  quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910',
+  quoterAddress: '0x2ee99Be3c520B7Bd64f51641c3e7Ef28950E03B7',
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  nonfungiblePositionManagerAddress: '0x396F2cA2a470EfC92511fD3e99833d28D38CFf53',
   tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
   swapRouter02Address: '',
 };
