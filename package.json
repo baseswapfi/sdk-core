@@ -1,6 +1,6 @@
 {
   "name": "@baseswapfi/sdk-core",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "license": "MIT",
   "description": "⚒️ An SDK for building applications on top of Baseswap V3",
   "author": "0xShoegazer",
