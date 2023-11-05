@@ -46,7 +46,8 @@ const BASE_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
   nonfungiblePositionManagerAddress: '0xDe151D5c92BfAA288Db4B67c21CD55d5826bCc93',
   tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
-  swapRouter02Address: '', // This is the SwapRouter02 that was replaced by the universal router setup
+  swapRouter02Address: '', // 02?
+  v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
 };
 // v3 router: 0x1B8eea9315bE495187D873DA7773a874545D9D48
 
