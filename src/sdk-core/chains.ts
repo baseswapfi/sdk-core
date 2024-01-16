@@ -1,4 +1,5 @@
 export enum ChainId {
+  ARBITRUM = 42161,
   BASE_GOERLI = 84531,
   BASE = 8453,
   OPTIMISM = 10,
@@ -6,7 +7,13 @@ export enum ChainId {
   SCROLL_SEPOLIA = 534351,
 }
 
-export const SUPPORTED_CHAINS = [ChainId.BASE, ChainId.BASE_GOERLI, ChainId.SCROLL_SEPOLIA, ChainId.SCROLL] as const;
+export const SUPPORTED_CHAINS = [
+  ChainId.BASE,
+  ChainId.BASE_GOERLI,
+  ChainId.SCROLL_SEPOLIA,
+  ChainId.SCROLL,
+  ChainId.ARBITRUM,
+] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 
 export enum NativeCurrencyName {

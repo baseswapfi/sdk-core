@@ -85,11 +85,23 @@ const SCROLL_ADDRESSES: ChainAddresses = {
 };
 // v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
 
+const ARBITRUM_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x855F2c70cf5cb1D56C15ed309a4DfEfb88ED909E',
+  multicallAddress: '0x091e99cb1C49331a94dD62755D168E941AbD0693', // Uni custom one
+  quoterAddress: '0x4fDBD73aD4B1DDde594BF05497C15f76308eFfb9', // V2
+  v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
+  nonfungiblePositionManagerAddress: '0xDe151D5c92BfAA288Db4B67c21CD55d5826bCc93',
+  tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
+  swapRouter02Address: '', // 02?
+  v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.SCROLL_SEPOLIA]: SCROLL_SEPOLIA_ADDRESS,
   [ChainId.SCROLL]: SCROLL_ADDRESSES,
+  [ChainId.ARBITRUM]: ARBITRUM_ADDRESSES,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -98,6 +110,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v3-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
+  [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -106,6 +119,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v2-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
+  [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
 };
 
 /* V3 Contract Addresses */
