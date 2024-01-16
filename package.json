@@ -2,7 +2,7 @@
   "name": "@baseswapfi/sdk-core",
   "version": "1.0.31",
   "license": "MIT",
-  "description": "⚒️ An SDK for building applications on top of Baseswap V3",
+  "description": "⚒️ An SDK for building applications on top of Baseswap",
   "author": "0xShoegazer",
   "module": "dist/sdk.esm.js",
   "main": "dist/index.js",
