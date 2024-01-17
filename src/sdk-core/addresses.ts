@@ -86,7 +86,7 @@ const SCROLL_ADDRESSES: ChainAddresses = {
 // v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
 const ARBITRUM_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x855F2c70cf5cb1D56C15ed309a4DfEfb88ED909E',
-  multicallAddress: '0x091e99cb1C49331a94dD62755D168E941AbD0693', // Uni custom one
+  multicallAddress: '0x3e4168c52011ef4e62caf30907478dce9a8212ce', // Uni custom one
   quoterAddress: '0x4fDBD73aD4B1DDde594BF05497C15f76308eFfb9', // V2
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
   nonfungiblePositionManagerAddress: '0x763c2e4393Ed80480D735193D57f31692Fe4504e',
