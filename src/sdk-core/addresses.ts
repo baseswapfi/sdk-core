@@ -87,10 +87,10 @@ const SCROLL_ADDRESSES: ChainAddresses = {
 const ARBITRUM_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x855F2c70cf5cb1D56C15ed309a4DfEfb88ED909E',
   multicallAddress: '0x3647c51266cc1610d1318edbdc1129da75db75c5', // Uni custom one
-  quoterAddress: '0x4fDBD73aD4B1DDde594BF05497C15f76308eFfb9', // V2
+  quoterAddress: '0x3D3429862B7a4053003Ddfdb76f1b2da6aed21A1', // V2
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
   nonfungiblePositionManagerAddress: '0x763c2e4393Ed80480D735193D57f31692Fe4504e',
-  tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
+  tickLensAddress: '0x4f881DAD698afDb3eb186f1F3fb7db15Abc0F86a',
   swapRouter02Address: '', // 02?
   v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
 };
