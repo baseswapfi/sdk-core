@@ -89,7 +89,7 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
   multicallAddress: '0x3647c51266cc1610d1318edbdc1129da75db75c5', // Uni custom one
   quoterAddress: '0x3D3429862B7a4053003Ddfdb76f1b2da6aed21A1', // V2
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
-  nonfungiblePositionManagerAddress: '0x763c2e4393Ed80480D735193D57f31692Fe4504e',
+  nonfungiblePositionManagerAddress: '0x81F2c375AEDbdF02f11c1Ae125e2f51Efa777cEa',
   tickLensAddress: '0x4f881DAD698afDb3eb186f1F3fb7db15Abc0F86a',
   swapRouter02Address: '', // 02?
   v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
