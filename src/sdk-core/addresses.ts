@@ -95,12 +95,24 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
 };
 
+const MODE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '', // Uni custom one
+  quoterAddress: '', // V2
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '', // 02?
+  v1MixedRouteQuoterAddress: '',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.SCROLL_SEPOLIA]: SCROLL_SEPOLIA_ADDRESS,
   [ChainId.SCROLL]: SCROLL_ADDRESSES,
   [ChainId.ARBITRUM]: ARBITRUM_ADDRESSES,
+  [ChainId.MODE]: MODE_ADDRESSES,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -110,6 +122,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
+  [ChainId.MODE]: '',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -119,6 +132,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
+  [ChainId.MODE]: '',
 };
 
 /* V3 Contract Addresses */
