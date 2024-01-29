@@ -4,6 +4,7 @@ export enum ChainId {
   BASE = 8453,
   FRAX_TESTNET = 2522,
   MODE = 34443,
+  MODE_TESTNET = 919,
   OPTIMISM = 10,
   SCROLL = 534352,
   SCROLL_SEPOLIA = 534351,
@@ -16,6 +17,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.SCROLL,
   ChainId.ARBITRUM,
   ChainId.MODE,
+  ChainId.MODE_TESTNET,
 ] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 

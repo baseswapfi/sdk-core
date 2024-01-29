@@ -106,6 +106,17 @@ const MODE_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '',
 };
 
+const MODE_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '', // Uni custom one
+  quoterAddress: '', // V2
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '', // 02?
+  v1MixedRouteQuoterAddress: '',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
@@ -113,6 +124,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SCROLL]: SCROLL_ADDRESSES,
   [ChainId.ARBITRUM]: ARBITRUM_ADDRESSES,
   [ChainId.MODE]: MODE_ADDRESSES,
+  [ChainId.MODE_TESTNET]: MODE_TESTNET_ADDRESSES,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -123,6 +135,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
   [ChainId.MODE]: '',
+  [ChainId.MODE_TESTNET]: '',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -133,6 +146,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
   [ChainId.MODE]: '',
+  [ChainId.MODE_TESTNET]: '',
 };
 
 /* V3 Contract Addresses */
