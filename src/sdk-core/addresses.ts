@@ -26,17 +26,23 @@ export const PROTOCOL_TOKEN_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xd5046B976188EB40f6DE40fB527F89c05b323385',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: '',
+  [ChainId.MODE]: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+  [ChainId.MODE_TESTNET]: '0xB687282AD4Fb8897D5Cd41f3C1A54DeB4cc88625',
 };
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285',
+  [ChainId.MODE]: '0x2b0a43dccbd7d42c18f6a83f86d1a19fa58d541a',
+  [ChainId.MODE_TESTNET]: '0xa26655bab784c9bd9daadaaff2a05a93484bf9c7',
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: '0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df',
+  [ChainId.MODE]: '0x82995f682dc38b17b99079cf63df8d263c6d5ee0',
+  [ChainId.MODE_TESTNET]: '0x9ce528e9a6bd2d489b9bbe2f97f4c8d6a23805f7',
 };
 
 const BASE_ADDRESSES: ChainAddresses = {
@@ -46,7 +52,7 @@ const BASE_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
   nonfungiblePositionManagerAddress: '0xDe151D5c92BfAA288Db4B67c21CD55d5826bCc93',
   tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
-  swapRouter02Address: '', // 02?
+  swapRouter02Address: '',
   v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
 };
 // v3 router: 0x1B8eea9315bE495187D873DA7773a874545D9D48
@@ -91,7 +97,7 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
   nonfungiblePositionManagerAddress: '0x81F2c375AEDbdF02f11c1Ae125e2f51Efa777cEa',
   tickLensAddress: '0x4f881DAD698afDb3eb186f1F3fb7db15Abc0F86a',
-  swapRouter02Address: '', // 02?
+  swapRouter02Address: '',
   v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
 };
 
@@ -102,7 +108,7 @@ const MODE_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '',
   tickLensAddress: '',
-  swapRouter02Address: '', // 02?
+  swapRouter02Address: '',
   v1MixedRouteQuoterAddress: '',
 };
 
@@ -113,7 +119,7 @@ const MODE_TESTNET_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '',
   tickLensAddress: '',
-  swapRouter02Address: '', // 02?
+  swapRouter02Address: '',
   v1MixedRouteQuoterAddress: '',
 };
 
