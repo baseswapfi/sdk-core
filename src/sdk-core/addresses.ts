@@ -103,7 +103,7 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
 
 const MODE_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '',
-  multicallAddress: '', // Uni custom one
+  multicallAddress: '0x7bb14ed986dae0c8423350a7f1c59a31b3c84509', // Uni custom one
   quoterAddress: '', // V2
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '',
@@ -114,7 +114,7 @@ const MODE_ADDRESSES: ChainAddresses = {
 
 const MODE_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '',
-  multicallAddress: '', // Uni custom one
+  multicallAddress: '0x30d273e96038cc14d1eedf0aa44e77be9caaa9b2', // Uni custom one
   quoterAddress: '', // V2
   v3MigratorAddress: '',
   nonfungiblePositionManagerAddress: '',
