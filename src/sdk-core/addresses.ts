@@ -34,14 +34,14 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285',
-  [ChainId.MODE]: '0x2b0a43dccbd7d42c18f6a83f86d1a19fa58d541a',
+  [ChainId.MODE]: '0xfb926356baf861c93c3557d7327dbe8734a71891',
   [ChainId.MODE_TESTNET]: '0xa26655bab784c9bd9daadaaff2a05a93484bf9c7',
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: '0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df',
-  [ChainId.MODE]: '0x82995f682dc38b17b99079cf63df8d263c6d5ee0',
+  [ChainId.MODE]: '0xc1e624c810d297fd70ef53b0e08f44fabe468591',
   [ChainId.MODE_TESTNET]: '0x9ce528e9a6bd2d489b9bbe2f97f4c8d6a23805f7',
 };
 
