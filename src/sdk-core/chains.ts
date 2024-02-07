@@ -21,7 +21,12 @@ export const SUPPORTED_CHAINS = [
 ] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 
-export const SUPPORTED_TESTNET_CHAINS = [ChainId.BASE_GOERLI, ChainId.SCROLL_SEPOLIA, ChainId.FRAX_TESTNET] as const;
+export const SUPPORTED_TESTNET_CHAINS = [
+  ChainId.BASE_GOERLI,
+  ChainId.SCROLL_SEPOLIA,
+  ChainId.FRAX_TESTNET,
+  ChainId.MODE_TESTNET,
+] as const;
 export type SupportedTestnetChainsType = typeof SUPPORTED_TESTNET_CHAINS[number];
 
 export enum NativeCurrencyName {

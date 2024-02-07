@@ -102,18 +102,18 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
 };
 
 const MODE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '',
+  v3CoreFactoryAddress: '0x7274E56489Af755981db08089a41D213E7cad562',
   multicallAddress: '0x7bb14ed986dae0c8423350a7f1c59a31b3c84509', // Uni custom one
-  quoterAddress: '', // V2
+  quoterAddress: '0xcd0013Fe2a9389b904aC8Cc22362a067e3d30ede', // V2
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '',
-  tickLensAddress: '',
+  nonfungiblePositionManagerAddress: '0xba3FeA4Fe91de455164Fb9979B834ce4E11f274b',
+  tickLensAddress: '0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688',
   swapRouter02Address: '',
   v1MixedRouteQuoterAddress: '',
 };
 
 const MODE_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '',
+  v3CoreFactoryAddress: '0x7C6C367ee607737d4297829cD2EA39eee4C98119',
   multicallAddress: '0x30d273e96038cc14d1eedf0aa44e77be9caaa9b2', // Uni custom one
   quoterAddress: '', // V2
   v3MigratorAddress: '',
