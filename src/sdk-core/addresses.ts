@@ -102,11 +102,11 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
 };
 
 const MODE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x83d806aB4EAef919338f76F77dD3A83D2A7F8cb4',
+  v3CoreFactoryAddress: '0xD4f08b675270DFD9FedAeA5E6a879a945BE80d1d',
   multicallAddress: '0x7bb14ed986dae0c8423350a7f1c59a31b3c84509', // Uni custom one
-  quoterAddress: '0x1B2EF03388306BDF06E3Ec64cA5e763c74B3c98C', // V2
+  quoterAddress: '0x40c164a5c5022f25Ec41Bb96F6fAc14b15Ce99c1', // V2
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '0xF74235f7Fd9eeFF44A78463fe72EA1B12C74EA92',
+  nonfungiblePositionManagerAddress: '0xd4974B38D5a4Ea2a9FA181Aa52A0336cCe5E12A0',
   tickLensAddress: '0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688',
   swapRouter02Address: '',
   v1MixedRouteQuoterAddress: '',
