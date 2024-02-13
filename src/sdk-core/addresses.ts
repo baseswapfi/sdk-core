@@ -53,7 +53,7 @@ const BASE_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xDe151D5c92BfAA288Db4B67c21CD55d5826bCc93',
   tickLensAddress: '0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30',
   swapRouter02Address: '',
-  v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
+  v1MixedRouteQuoterAddress: '0x73eFdC8039B47207Cc718b7ADcB3D0dC8E76c082',
 };
 // v3 router: 0x1B8eea9315bE495187D873DA7773a874545D9D48
 
@@ -98,7 +98,7 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0x81F2c375AEDbdF02f11c1Ae125e2f51Efa777cEa',
   tickLensAddress: '0x4f881DAD698afDb3eb186f1F3fb7db15Abc0F86a',
   swapRouter02Address: '',
-  v1MixedRouteQuoterAddress: '0xDb7971adc396d7eD3953E9542a8D4baec914B772',
+  v1MixedRouteQuoterAddress: '',
 };
 
 const MODE_ADDRESSES: ChainAddresses = {
@@ -109,7 +109,7 @@ const MODE_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xd4974B38D5a4Ea2a9FA181Aa52A0336cCe5E12A0',
   tickLensAddress: '0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688',
   swapRouter02Address: '',
-  v1MixedRouteQuoterAddress: '',
+  v1MixedRouteQuoterAddress: '0x956610d91F3E8d7620fbaa9Dc0d2FDB8eDD492C9',
 };
 
 // const MODE_TESTNET_ADDRESSES: ChainAddresses = {
@@ -139,7 +139,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
-  [ChainId.MODE]: '',
+  [ChainId.MODE]: 'https://baseswap-backend-b49f03d8ca6d.herokuapp.com/graphql',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -149,7 +149,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
-  [ChainId.MODE]: '',
+  [ChainId.MODE]: 'https://baseswap-backend-b49f03d8ca6d.herokuapp.com/graphql',
 };
 
 /* V3 Contract Addresses */
