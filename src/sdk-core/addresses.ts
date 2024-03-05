@@ -147,7 +147,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
-  [ChainId.MODE]: 'https://baseswap-backend-b49f03d8ca6d.herokuapp.com/graphql',
+  [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/1.0.0/gn',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -157,7 +157,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
-  [ChainId.MODE]: 'https://baseswap-backend-b49f03d8ca6d.herokuapp.com/graphql',
+  [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2/1.0.3/gn',
 };
 
 /* V3 Contract Addresses */
