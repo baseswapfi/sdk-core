@@ -110,14 +110,14 @@ const ARBITRUM_ADDRESSES: ChainAddresses = {
 };
 
 const MODE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xD4f08b675270DFD9FedAeA5E6a879a945BE80d1d',
+  v3CoreFactoryAddress: '0x6E36FC34eA123044F278d3a9F3819027B21c9c32',
   multicallAddress: '0x7bb14ed986dae0c8423350a7f1c59a31b3c84509', // Uni custom one
-  quoterAddress: '0x40c164a5c5022f25Ec41Bb96F6fAc14b15Ce99c1', // V2
+  quoterAddress: '', // TODO: Deploy new if needed for in-house order routing
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '0xd4974B38D5a4Ea2a9FA181Aa52A0336cCe5E12A0',
+  nonfungiblePositionManagerAddress: '0xcc3726bCc27f232bC1CaAB40853AEa91ae43C216',
   tickLensAddress: '0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688',
   swapRouter02Address: '',
-  v1MixedRouteQuoterAddress: '0x956610d91F3E8d7620fbaa9Dc0d2FDB8eDD492C9',
+  v1MixedRouteQuoterAddress: '', // TODO: Deploy new if needed for in-house order routing
 };
 
 // const MODE_TESTNET_ADDRESSES: ChainAddresses = {
@@ -147,7 +147,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
-  [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/1.0.0/gn',
+  [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/1.0.1/gn',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
