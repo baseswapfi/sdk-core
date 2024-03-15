@@ -120,24 +120,25 @@ const MODE_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '', // TODO: Deploy new if needed for in-house order routing
 };
 
-// const MODE_TESTNET_ADDRESSES: ChainAddresses = {
-//   v3CoreFactoryAddress: '0x7C6C367ee607737d4297829cD2EA39eee4C98119',
-//   multicallAddress: '0x30d273e96038cc14d1eedf0aa44e77be9caaa9b2', // Uni custom one
-//   quoterAddress: '', // V2
-//   v3MigratorAddress: '',
-//   nonfungiblePositionManagerAddress: '',
-//   tickLensAddress: '',
-//   swapRouter02Address: '',
-//   v1MixedRouteQuoterAddress: '',
-// };
+const MODE_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '0x30d273e96038cc14d1eedf0aa44e77be9caaa9b2', // Uni custom one
+  quoterAddress: '', // V2
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '',
+  v1MixedRouteQuoterAddress: '',
+};
 
-export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
+export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.SCROLL_SEPOLIA]: SCROLL_SEPOLIA_ADDRESS,
   [ChainId.SCROLL]: SCROLL_ADDRESSES,
   [ChainId.ARBITRUM]: ARBITRUM_ADDRESSES,
   [ChainId.MODE]: MODE_ADDRESSES,
+  [ChainId.MODE_TESTNET]: MODE_TESTNET_ADDRESSES,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -150,7 +151,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/1.0.0/gn',
 };
 
-export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
+export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
   [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/harleen-m/baseswap',
   [ChainId.BASE_GOERLI]:
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v2-base-goerli/version/v0.0.1-new-version/api',
@@ -158,6 +159,8 @@ export const V2_SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2/1.0.4/gn',
+  [ChainId.MODE_TESTNET]:
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/1.0.0/gn',
 };
 
 /* V3 Contract Addresses */
