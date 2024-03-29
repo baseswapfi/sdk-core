@@ -163,6 +163,12 @@ export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/1.0.0/gn',
 };
 
+export const NFT_POOLS_SUBGRAPH_MAP: Record<number, string> = {
+  [ChainId.BASE]: '',
+  [ChainId.MODE]:
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/nft-pools-mode/prod/gn',
+};
+
 /* V3 Contract Addresses */
 export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
