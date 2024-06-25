@@ -142,7 +142,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
-  [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-base',
+  // [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-base',
+  [ChainId.BASE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-base/prod/gn',
   [ChainId.BASE_GOERLI]:
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v3-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
@@ -152,7 +153,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
-  [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/harleen-m/baseswap',
+  [ChainId.BASE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v2-base/prod/gn',
   [ChainId.BASE_GOERLI]:
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v2-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: '',
@@ -160,7 +161,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2/prod/gn',
   [ChainId.MODE_TESTNET]:
-    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/1.0.0/gn',
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/prod/gn',
 };
 
 export const NFT_POOLS_SUBGRAPH_MAP: Record<number, string> = {
