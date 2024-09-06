@@ -163,7 +163,8 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/prod/gn',
-  [ChainId.OPTIMISM]: '',
+  [ChainId.OPTIMISM]:
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-optimism/prod/gn',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
