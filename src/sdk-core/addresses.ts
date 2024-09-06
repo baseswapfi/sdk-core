@@ -53,6 +53,18 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MODE_TESTNET]: '0x9ce528e9a6bd2d489b9bbe2f97f4c8d6a23805f7',
 };
 
+const OPTIMISM_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
+  multicallAddress: '0x1F98415757620B543A52E61c46B32eB19261F984', // Uni custom one
+  quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910', // V2
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
+  swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+  v1MixedRouteQuoterAddress: '',
+};
+// v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
+
 const BASE_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x38015D05f4fEC8AFe15D7cc0386a126574e8077B',
   multicallAddress: '0x091e99cb1C49331a94dD62755D168E941AbD0693', // Uni custom one
@@ -139,6 +151,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.ARBITRUM]: ARBITRUM_ADDRESSES,
   [ChainId.MODE]: MODE_ADDRESSES,
   [ChainId.MODE_TESTNET]: MODE_TESTNET_ADDRESSES,
+  [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
@@ -150,6 +163,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
   [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/prod/gn',
+  [ChainId.OPTIMISM]: '',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {

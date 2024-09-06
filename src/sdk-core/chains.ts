@@ -17,6 +17,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.SCROLL,
   ChainId.ARBITRUM,
   ChainId.MODE,
+  ChainId.OPTIMISM,
 ] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 
