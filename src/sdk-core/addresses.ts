@@ -129,7 +129,7 @@ const MODE_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xcc3726bCc27f232bC1CaAB40853AEa91ae43C216',
   tickLensAddress: '0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688',
   swapRouter02Address: '0x7107112065dAF2EEedD56B06cdF185f3eFFF516D',
-  v1MixedRouteQuoterAddress: '', // TODO: Deploy new if needed for in-house order routing
+  v1MixedRouteQuoterAddress: '0xC6004410771E706F46d756f3a6fCE7B1Df934498',
 };
 
 const MODE_TESTNET_ADDRESSES: ChainAddresses = {
