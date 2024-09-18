@@ -178,6 +178,8 @@ export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2/prod/gn',
   [ChainId.MODE_TESTNET]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/prod/gn',
+  [ChainId.OPTIMISM]:
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v2-optimism/prod/gn',
 };
 
 export const NFT_POOLS_SUBGRAPH_MAP: Record<number, string> = {
