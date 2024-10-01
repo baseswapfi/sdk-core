@@ -114,7 +114,8 @@ const SCROLL_ADDRESSES: ChainAddresses = {
 };
 // v3 router: 0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB
 const ARBITRUM_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x855F2c70cf5cb1D56C15ed309a4DfEfb88ED909E',
+  // v3CoreFactoryAddress: '0x855F2c70cf5cb1D56C15ed309a4DfEfb88ED909E',
+  v3CoreFactoryAddress: '0xa3792B3678b61001839c404ffcD20EF103473f68', // @note This is the defiedge PoolDeployer
   multicallAddress: '0x3647c51266cc1610d1318edbdc1129da75db75c5', // Uni custom one
   quoterAddress: '0x3D3429862B7a4053003Ddfdb76f1b2da6aed21A1', // V2
   v3MigratorAddress: '0x596C5c71A079BddE96f940649C21a39201d4C47b',
@@ -176,7 +177,8 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v3-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
-  [ChainId.ARBITRUM]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-arbitrum/prod/gn',
+  [ChainId.ARBITRUM]:
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-arbitrum/prod/gn',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/prod/gn',
   [ChainId.OPTIMISM]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-optimism/prod/gn',
@@ -188,7 +190,8 @@ export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v2-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
-  [ChainId.ARBITRUM]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v2-arbitrum/prod/gn',
+  [ChainId.ARBITRUM]:
+    'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v2-arbitrum/prod/gn',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2/prod/gn',
   [ChainId.MODE_TESTNET]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/prod/gn',
