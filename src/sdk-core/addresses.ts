@@ -45,6 +45,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MODE]: '0xfb926356baf861c93c3557d7327dbe8734a71891',
   [ChainId.MODE_TESTNET]: '0xa26655bab784c9bd9daadaaff2a05a93484bf9c7',
   [ChainId.OPTIMISM]: '0x22505cb4D5d10b2C848A9d75C57eA72A66066D8C',
+  [ChainId.ARBITRUM]: '0x1C6E968f2E6c9DEC61DB874E28589fd5CE3E1f2c',
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
@@ -53,6 +54,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MODE]: '0xc1e624c810d297fd70ef53b0e08f44fabe468591',
   [ChainId.MODE_TESTNET]: '0x9ce528e9a6bd2d489b9bbe2f97f4c8d6a23805f7',
   [ChainId.OPTIMISM]: '0x6D0829dABd4B41e9a999283a11DDa1516F591e86',
+  [ChainId.ARBITRUM]: '0x7238FB45146BD8FcB2c463Dc119A53494be57Aac',
 };
 
 const OPTIMISM_ADDRESSES: ChainAddresses = {
@@ -162,7 +164,7 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v3-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll-sepolia',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-scroll',
-  [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex-v3',
+  [ChainId.ARBITRUM]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-arbitrum/prod/gn',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/prod/gn',
   [ChainId.OPTIMISM]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-optimism/prod/gn',
@@ -174,7 +176,7 @@ export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
     'https://subgraph.satsuma-prod.com/testnet-gang--439662/v2-base-goerli/version/v0.0.1-new-version/api',
   [ChainId.SCROLL_SEPOLIA]: '',
   [ChainId.SCROLL]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v2-scroll',
-  [ChainId.ARBITRUM]: 'https://api.thegraph.com/subgraphs/name/hekman-eth/arbidex',
+  [ChainId.ARBITRUM]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v2-arbitrum/prod/gn',
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2/prod/gn',
   [ChainId.MODE_TESTNET]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/prod/gn',
