@@ -9,6 +9,7 @@ export enum ChainId {
   SCROLL = 534352,
   SCROLL_SEPOLIA = 534351,
   SONIC_TESTNET = 64165,
+  WORLDCHAIN = 480,
 }
 
 export const SUPPORTED_CHAINS = [
