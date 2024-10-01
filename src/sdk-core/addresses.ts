@@ -146,6 +146,17 @@ const MODE_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '',
 };
 
+const SONIC_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
+  multicallAddress: '', // Uni custom one
+  quoterAddress: '', // V2
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '',
+  v1MixedRouteQuoterAddress: '',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
@@ -155,6 +166,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.MODE]: MODE_ADDRESSES,
   [ChainId.MODE_TESTNET]: MODE_TESTNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
+  [ChainId.SONIC_TESTNET]: SONIC_TESTNET_ADDRESSES,
 };
 
 export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
