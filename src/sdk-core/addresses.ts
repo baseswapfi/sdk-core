@@ -149,12 +149,12 @@ const MODE_TESTNET_ADDRESSES: ChainAddresses = {
 
 const SONIC_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
-  multicallAddress: '', // Uni custom one
-  quoterAddress: '', // V2
+  multicallAddress: '0x82995F682dc38b17B99079Cf63DF8d263C6D5eE0', // Uni custom one
+  quoterAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45', // V2
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '',
-  tickLensAddress: '',
-  swapRouter02Address: '',
+  nonfungiblePositionManagerAddress: '0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A',
+  tickLensAddress: '0x0fE9E7B39dbdfe32c9F37FAcCec6b33d290CbF50',
+  swapRouter02Address: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910',
   v1MixedRouteQuoterAddress: '',
 };
 
