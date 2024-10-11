@@ -9,6 +9,7 @@ export enum ChainId {
   SCROLL = 534352,
   SCROLL_SEPOLIA = 534351,
   SONIC_TESTNET = 64165,
+  SONEIUM_TESTNET = 1946,
   WORLDCHAIN = 480,
 }
 
@@ -28,10 +29,12 @@ export const SUPPORTED_TESTNET_CHAINS = [
   ChainId.SCROLL_SEPOLIA,
   ChainId.FRAX_TESTNET,
   ChainId.MODE_TESTNET,
+  ChainId.SONEIUM_TESTNET,
 ] as const;
 export type SupportedTestnetChainsType = typeof SUPPORTED_TESTNET_CHAINS[number];
 
 export enum NativeCurrencyName {
   // Strings match input for CLI
   ETHER = 'ETH',
+  S = 'S',
 }
