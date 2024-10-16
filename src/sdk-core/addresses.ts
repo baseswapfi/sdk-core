@@ -1,4 +1,4 @@
-import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from './chains';
+import { ChainId, SUPPORTED_CHAINS } from './chains';
 
 type AddressMap = { [chainId: number]: string };
 
@@ -46,6 +46,8 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MODE_TESTNET]: '0xa26655bab784c9bd9daadaaff2a05a93484bf9c7',
   [ChainId.OPTIMISM]: '0x22505cb4D5d10b2C848A9d75C57eA72A66066D8C',
   [ChainId.ARBITRUM]: '0x1C6E968f2E6c9DEC61DB874E28589fd5CE3E1f2c',
+  [ChainId.SONEIUM_TESTNET]: '0x82995F682dc38b17B99079Cf63DF8d263C6D5eE0',
+  [ChainId.SONIC_TESTNET]: '0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df',
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
@@ -55,6 +57,8 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MODE_TESTNET]: '0x9ce528e9a6bd2d489b9bbe2f97f4c8d6a23805f7',
   [ChainId.OPTIMISM]: '0x6D0829dABd4B41e9a999283a11DDa1516F591e86',
   [ChainId.ARBITRUM]: '0x7238FB45146BD8FcB2c463Dc119A53494be57Aac',
+  [ChainId.SONEIUM_TESTNET]: '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285',
+  [ChainId.SONIC_TESTNET]: '0xB687282AD4Fb8897D5Cd41f3C1A54DeB4cc88625',
 };
 
 const OPTIMISM_ADDRESSES: ChainAddresses = {
@@ -182,7 +186,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.SONEIUM_TESTNET]: SONEIUM_TESTNET_ADDRESSES,
 };
 
-export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
+export const SUBGRAPH_URL_MAP: Record<number, string> = {
   // [ChainId.BASE]: 'https://api.thegraph.com/subgraphs/name/baseswapfi/v3-base',
   [ChainId.BASE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-base/prod/gn',
   [ChainId.BASE_GOERLI]:
@@ -194,6 +198,8 @@ export const SUBGRAPH_URL_MAP: Record<SupportedChainsType, string> = {
   [ChainId.MODE]: 'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v3/prod/gn',
   [ChainId.OPTIMISM]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v3-optimism/prod/gn',
+  [ChainId.SONEIUM_TESTNET]:
+    'https://gateway.thegraph.com/api/[API_KEY]/subgraphs/id/6oRnumjNZEfWHYxdTYxfLGgDNCb5wAcNHJkzamgs1tRE',
 };
 
 export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
@@ -209,6 +215,8 @@ export const V2_SUBGRAPH_URL_MAP: Record<number, string> = {
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/swapmode-v2-testnet/prod/gn',
   [ChainId.OPTIMISM]:
     'https://api.goldsky.com/api/public/project_cltceeuudv1ij01x7ekxhfl46/subgraphs/v2-optimism/prod/gn',
+  [ChainId.SONEIUM_TESTNET]:
+    'https://gateway.thegraph.com/api/[API_KEY]/subgraphs/id/CmVfJZoXnc9MqKEsVDYYhETNARaELuAiuhnhfJQAa9An',
 };
 
 export const NFT_POOLS_SUBGRAPH_MAP: Record<number, string> = {
