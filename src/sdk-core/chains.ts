@@ -21,6 +21,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.ARBITRUM,
   ChainId.MODE,
   ChainId.OPTIMISM,
+  ChainId.SONEIUM_TESTNET,
 ] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 
