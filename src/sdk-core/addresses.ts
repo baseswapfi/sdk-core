@@ -66,7 +66,7 @@ const OPTIMISM_ADDRESSES: ChainAddresses = {
   multicallAddress: '0x1F98415757620B543A52E61c46B32eB19261F984', // Uni custom one
   quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910', // V2
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  nonfungiblePositionManagerAddress: '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285',
   tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
   swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
   v1MixedRouteQuoterAddress: '',
