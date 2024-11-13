@@ -10,7 +10,9 @@ export enum ChainId {
   SCROLL_SEPOLIA = 534351,
   SONIC_TESTNET = 64165,
   SONEIUM_TESTNET = 1946,
+  UNICHAIN = 130, 
   WORLDCHAIN = 480,
+
 }
 
 export const SUPPORTED_CHAINS = [
@@ -22,6 +24,10 @@ export const SUPPORTED_CHAINS = [
   ChainId.MODE,
   ChainId.OPTIMISM,
   ChainId.SONEIUM_TESTNET,
+  ChainId.SONIC_TESTNET,
+  ChainId.UNICHAIN,
+
+
 ] as const;
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 
