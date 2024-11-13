@@ -48,6 +48,8 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.ARBITRUM]: '0x1C6E968f2E6c9DEC61DB874E28589fd5CE3E1f2c',
   [ChainId.SONEIUM_TESTNET]: '0x82995F682dc38b17B99079Cf63DF8d263C6D5eE0',
   [ChainId.SONIC_TESTNET]: '0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df',
+  [ChainId.UNICHAIN]: '0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df', //copied from Sonic 
+
 };
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BASE]: '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86',
@@ -59,6 +61,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.ARBITRUM]: '0x7238FB45146BD8FcB2c463Dc119A53494be57Aac',
   [ChainId.SONEIUM_TESTNET]: '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285',
   [ChainId.SONIC_TESTNET]: '0xB687282AD4Fb8897D5Cd41f3C1A54DeB4cc88625',
+  [ChainId.UNICHAIN]: '0xB687282AD4Fb8897D5Cd41f3C1A54DeB4cc88625', //copied from sonic 
 };
 
 const OPTIMISM_ADDRESSES: ChainAddresses = {
@@ -173,6 +176,19 @@ const SONEIUM_TESTNET_ADDRESSES: ChainAddresses = {
   v1MixedRouteQuoterAddress: '',
 };
 
+
+const UNICHAIN_ADDRESSES: ChainAddresses = {
+  //copied all from soneium; 
+  v3CoreFactoryAddress: '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720',
+  multicallAddress: '0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A', // Uni custom one
+  quoterAddress: '0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910', // V2
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9',
+  tickLensAddress: '0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45',
+  swapRouter02Address: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+  v1MixedRouteQuoterAddress: '',
+};
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
@@ -184,6 +200,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<number, ChainAddresses> = {
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
   [ChainId.SONIC_TESTNET]: SONIC_TESTNET_ADDRESSES,
   [ChainId.SONEIUM_TESTNET]: SONEIUM_TESTNET_ADDRESSES,
+  [ChainId.UNICHAIN]: UNICHAIN_ADDRESSES,
+
 };
 
 export const SUBGRAPH_URL_MAP: Record<number, string> = {
